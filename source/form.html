@@ -31,32 +31,32 @@
   <main class="page-main">
 <section class="form">
   <div class="form__wrapper">
-    <form action="https://echo.htmlacademy.ru/" method="GET">
+    <form action="https://echo.htmlacademy.ru/" method="POST">
     <h1 class="form__title">Подбор программы</h1>
     <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <div class="form__cat">
       <h2 class="visually-hidden">Данные кота</h2>
           <ul class="form__list">
             <li class="form__item">
-              <label for="form-name">Имя:*</label>
+              <label for="form__field-label">Имя:*</label>
               <input class="form__input form__input--text" name="cat-name" id="form-name" type="text" placeholder="Барсик">
             </li>
             <li class="form__item">
-              <label for="form-weight">Вес (кг):*</label>
+              <label for="form__weight">Вес (кг):*</label>
               <input class="form__input form__input--text" name="cat-weight" id="form-weight" type="text" placeholder="7">
             </li>
             <li class="form__item">
-              <label for="form-age">Возраст (лет):</label>
+              <label for="form__age">Возраст (лет):</label>
               <input class="form__input form__input--text" name="cat-age" id="form-age" type="text" placeholder="7">
             </li>
           </ul>
           <ul class="form__programm">
             <li class="form__item">
-              <label for="form-slim">Похудение</label>
+              <label for="for__slim">Похудение</label>
               <input class="form__item form__input--checkbox-circle" type="checkbox" name="weight-loss" id="form-slim" checked>
             </li>
             <li class="form__item">
-              <label for="form-up">Набор массы</label>
+              <label for="form__up">Набор массы</label>
               <input class="form__item form__input--checkbox-circle" type="checkbox" name="weight-up" id="form-up">
             </li>
             <li class="form__item">
@@ -78,7 +78,7 @@
               </li>
           </ul>
         </div>
-        <div class="form__komment">
+        <div class="form__comment">
           <h2 class="form__subtitle">Комментарий</h2>
           <div class="form__list">
             <div class="form__item">
@@ -108,7 +108,7 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="form_button">отправить заявку</button>
+        <button type="submit" class="form_button">отправить заявку</button>
       </form>
   </div>
 </section>
