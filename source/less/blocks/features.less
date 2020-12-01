@@ -1,0 +1,60 @@
+.features {
+
+}
+
+.features__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.features__title {
+  font-family: @special-font-family;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: @basic-dark;
+}
+
+.features__list {
+  .list-reset();
+}
+
+.features__item {
+  padding-left: 100px;
+  list-style-type: none;
+  margin-top: 26px;
+  line-height: 18px;
+  position: relative;
+}
+
+.features__item--leaf::before {
+  content: url(../img/icon_leaf.svg);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+}
+
+.features__item--cup::before {
+  content: url(../img/cup.svg);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+}
+
+.features__item--eat::before {
+  content: url(../img/eat.svg);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+}
+
+.features__item--weight::before {
+  content: url(../img/weight.svg);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+}
