@@ -1,0 +1,90 @@
+.form__wrapper {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form__title {
+  font-family: @special-font-family;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: @basic-dark;
+}
+
+.form__subtitle {
+  margin-top: 37px;
+  font-family: @special-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: @basic-dark;
+}
+
+.form__list,
+.form__programm {
+  .list-reset ();
+  margin-top: 39px;
+}
+
+.form__programm, .form__owner {
+  .border-bottom ();
+  padding-bottom: 24px;
+}
+
+.form__optional {
+  padding-bottom: 24px;
+}
+
+.form__item {
+  font-family: @special-font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.form__input {
+  flex-grow: 1;
+  padding: 14px;
+  margin-left: 13px;
+}
+
+.form__input--checkbox-circle {
+  flex-grow: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.form__input--checkbox-square {
+  flex-grow: 0;
+}
+
+.form__button {
+  font-family: @special-font-family;
+  border: none;
+  width: 100%;
+  display: block;
+  background-color: @basic-green;
+  color: @basic-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
