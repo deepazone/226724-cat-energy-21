@@ -74,13 +74,13 @@
           </div>
           <div class="form__owner">
             <h2 class="form__title">Контактные данные (владельца кота)</h2>
-            <ul class="form__list">
-              <li class="form__item">
+            <ul class="form__list--owner form__list">
+              <li class="form__item--owner form__item">
                 <label class="form__label" for="form__mail">E-mail:*</label>
                 <input class="form__input form__input--text" name="name-owner" id="form-mail" type="text"
                   placeholder="kuklachev@gmail.com">
               </li>
-              <li class="form__item">
+              <li class="form__item--owner form__item">
                 <label class="form__label" for="form__phone">Телефон:*</label>
                 <input class="form__input form__input--text" name="phone-owner" id="form-phone" type="text"
                   placeholder="8 (960) 900-60-90">
@@ -99,29 +99,44 @@
           </div>
           <div class="form__optional">
             <h2 class="form__title">Дополнительно</h2>
-            <ul class="form__list list-reset">
-              <li class="form__item">
+            <ul class="form__list--option list-reset">
+              <li class="form__item--option form__item ">
                 <label class="form__label" for="form__shugar">Сахарозаменитель</label>
                 <input class="form__input form__input--checkbox-square" type="checkbox" name="shugar" id="form-shugar">
               </li>
-              <li class="form__item">
+              <li class="form__item--option form__item">
                 <label class="form__label" for="form__water">Питьевая вода</label>
                 <input class="form__input form__input--checkbox-square" type="checkbox" name="water" id="form-water">
               </li>
-              <li class="form__item">
+              <li class="form__item--option form__item">
                 <label class="form__label" for="form__milk">Молоко</label>
                 <input class="form__input form__input--checkbox-square" type="checkbox" name="milk" id="form-milk">
               </li>
-              <li class="form__item">
+              <li class="form__item--option form__item">
                 <label class="form__label" for="form__vitamin">Молоко</label>
                 <input class="form__input form__input--checkbox-square" type="checkbox" name="vitamin"
                   id="form-vitamin">
               </li>
             </ul>
           </div>
-          <button type="submit" class="form__button button">отправить заявку</button>
-        </form>
+          <div class="sending">
+          <button type="submit" class="sending__item button">отправить заявку</button>
+        <p class="sending__item"><sup>*</sup> — Обязательные поля</p>
       </div>
+      </form>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+        <div class="contacts__address">
+          <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="contacts__map"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11097.108901188885!2d30.315150983277206!3d59.93882818928171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605561919922!5m2!1sru!2sru"
+          width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe></div>
     </section>
     <footer class="page-footer">
       <div class="footer">
