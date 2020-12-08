@@ -1,11 +1,33 @@
+.programms__wrapper {
+  width: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
 .programms__list {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programms__item {
   background: @basic-gray;
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .programms__title {

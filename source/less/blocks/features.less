@@ -1,22 +1,42 @@
-.features {
-
-}
-
 .features__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
+
 .features__title {
   font-family: @special-font-family;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0em;
   color: @basic-dark;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .features__list {
   .list-reset();
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
@@ -25,6 +45,21 @@
   margin-top: 26px;
   line-height: 18px;
   position: relative;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 48%;
+    padding-top: 100px;
+    padding-left: 0px;
+    margin-top: 0px;
+    min-height: 290px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+  }
 }
 
 .features__item--leaf::before {
@@ -32,7 +67,8 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  left: 0px;
+  left: 0;
+  top: 0;
 }
 
 .features__item--cup::before {
@@ -40,7 +76,8 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  left: 0px;
+  left: 0;
+  top: 0;
 }
 
 .features__item--eat::before {
@@ -48,7 +85,8 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  left: 0px;
+  left: 0;
+  top: 0;
 }
 
 .features__item--weight::before {
@@ -56,5 +94,6 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  left: 0px;
+  left: 0;
+  top: 0;
 }
