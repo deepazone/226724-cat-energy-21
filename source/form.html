@@ -14,9 +14,9 @@
       <img class="header__logo header__logo--small" src="https://via.placeholder.com/25x25" alt="Графема логотипа">
       <img class="header__logo logo" src="https://via.placeholder.com/150x25" alt="Кэт энерджи">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__nav">
-        <button type="button" class="main-nav__button"></button>
+        <button type="button" class="main-nav__toggle"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -25,7 +25,7 @@
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--active" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -120,10 +120,10 @@
             </ul>
           </div>
           <div class="sending">
-          <button type="submit" class="sending__item button">отправить заявку</button>
-        <p class="sending__item"><sup>*</sup> — Обязательные поля</p>
-      </div>
-      </form>
+            <button type="submit" class="sending__item button">отправить заявку</button>
+            <p class="sending__item"><sup>*</sup> — Обязательные поля</p>
+          </div>
+        </form>
       </div>
     </section>
     <section class="contacts">
@@ -159,7 +159,8 @@
           </div>
           <div class="footer__copyright">
             <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-              <p class="footer__copyright-text" >HTML Academy</p></a>
+              <p class="footer__copyright-text">HTML Academy</p>
+            </a>
             <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="" alt="Логотип академии"></a>
             </a>
@@ -168,6 +169,7 @@
       </div>
     </footer>
   </main>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>
