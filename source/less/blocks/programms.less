@@ -1,33 +1,15 @@
 .programms__wrapper {
   width: auto;
-
-  @media (min-width: @tablet-width) {
-    width: 708px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-  }
 }
 
 .programms__list {
   padding-left: 20px;
   padding-right: 20px;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 .programms__item {
   background: @basic-gray;
   list-style-type: none;
-
-  @media (min-width: @desktop-width) {
-    width: 570px;
-  }
 }
 
 .programms__title {
@@ -51,7 +33,8 @@
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 23px;
+  padding-top: 10px;
+  padding-bottom: 25px;
   border-bottom: 1px solid @border-gray;
 }
 
@@ -67,4 +50,81 @@
   padding-bottom: 19px;
   display: block;
   color: @basic-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .programms__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .programms__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .programms__title {
+    font-size: 36px;
+    padding: 0;
+    margin-left: 52px;
+    margin-top: 71px;
+    margin-bottom: 0;
+  }
+
+  .programms__item {
+    min-height: 372px;
+  }
+
+  .programms__description {
+    max-width: 403px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  .programms__link {
+    font-size: 20px;
+    padding: 0;
+    margin-left: 51px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programms__wrapper {
+    width: 1220px;
+    margin-top: 82px;
+  }
+
+  .programms__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__item {
+    width: 570px;
+    padding-bottom: 64px;
+  }
+
+  .programms__title {
+    padding: 0;
+    margin-top: 72px;
+    margin-left: 214px;
+  }
+
+  .programms__description {
+    padding: 0;
+    margin-top: 67px;
+    margin-left: 52px;
+    max-width: 513px;
+  }
+
+  .programms__link {
+    padding: 0;
+    margin-left: 52px;
+    margin-top: 32px;
+  }
 }
