@@ -1,3 +1,13 @@
+.header {
+  padding: 14px 20px;
+}
+
+.header__link {
+  display: flex;
+  justify-content: space-between;
+  width: 191px;
+}
+
 .header__logo {
   width: auto;
   height: auto;
@@ -15,6 +25,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .header__logo-text {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -23,5 +37,10 @@
     padding-top: 53px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .header__logo-text {
+    display: none;
   }
 }

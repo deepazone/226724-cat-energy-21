@@ -61,7 +61,7 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
     width: 218px;
-    text-align: left;
+    text-align: right;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,7 +85,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
+    text-align: right;
   }
 
   @media (min-width: @desktop-width) {
@@ -96,5 +96,18 @@
 @media (min-width: @desktop-width) {
   .contacts__map {
     margin-bottom: 60px;
+  }
+
+  .contacts__wrapper {
+    left: 103px;
+    top: 55px;
+  }
+
+  .contacts__map-frame {
+    display: block;
+
+    &--big {
+      min-height: 400px;
+    }
   }
 }

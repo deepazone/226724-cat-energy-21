@@ -15,6 +15,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 }
 
 .promo__title {
@@ -42,10 +43,10 @@
 }
 
 .promo__image {
-  width: auto;
-  height: auto;
-  display: block;
   margin: 0 auto;
+  position: relative;
+  display: block;
+  top: 11px;
 }
 
 .promo__link {
@@ -53,12 +54,14 @@
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 135px;
+  top: 11px;
 }
 
 @media (min-width: @tablet-width) {
   .promo {
     background: none;
+    position: relative;
+    z-index: -1;
   }
 
   .promo__wrapper {
@@ -87,7 +90,9 @@
   .promo__image {
     margin: 0;
     position: absolute;
-    left: 50%;
+    left: 3.9%;
+    top: 33.4%;
+    z-index: -1;
   }
 
   .promo__link {
@@ -135,7 +140,9 @@
   }
 
   .promo__image {
-    top: 66%;
+    top: 29%;
+    left: 36.7%;
+    z-index: 1;
   }
 
   .promo__link {
