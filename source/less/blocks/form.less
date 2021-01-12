@@ -163,6 +163,11 @@
     margin-bottom: 42px;
   }
 
+  .form__programm,
+  .form__owner {
+    border-bottom: 0;
+}
+
   .form__list {
     margin-bottom: 72px;
 
@@ -211,20 +216,42 @@
   }
 
   .form__title {
+    position: relative;
     font-size: 36px;
     margin-bottom: 79px;
+
+    &::before {
+      content: "";
+      height: 2px;
+      background-color: @basic-green;
+      position: absolute;
+      top: 50px;
+      right: -40px;
+      width: 100vw;
+    }
+
+   /* &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      margin-left: 0px;
+      top: 15px;
+      height: 2px;
+      right: 100%;
+      border-left: solid 43px @basic-white;
+      background-color: @basic-green;
+    }*/
   }
 
   .form__programm {
     padding-left: 32px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 23px;
     border: 1px solid @border-gray;
   }
 
   .form__label-radio {
-    margin-bottom: 12px;
-    margin-left: 57px;
+    margin-bottom: 15px;
+    margin-left: 15px;
   }
 
   .form__label {
@@ -237,11 +264,11 @@
     font-size: 20px;
   }
 
-  .form__checked-circle::before {
+  .form__label-radio::before {
     display: block;
     content: "";
     position: absolute;
-    left: -3px;
+    left: -58px;
     top: -12px;
     width: 40px;
     height: 40px;
@@ -249,11 +276,11 @@
     border-radius: 20px;
   }
 
-  .form__input:checked + .form__checked-circle::after {
+  .form__input-radio:checked + .form__label-radio::after {
     display: block;
     position: absolute;
     content: "";
-    left: 7px;
+    left: -48px;
     top: -2px;
     width: 20px;
     height: 20px;
@@ -261,7 +288,7 @@
     border-radius: 50%;
   }
 
-  .form__checked-square::before {
+  .form__label-square::before {
     display: block;
     content: "";
     position: absolute;
@@ -276,8 +303,8 @@
     padding-left: 47px;
   }
 
-  .form__input-square:checked + .form__checked-square::after {
-
+  .form__input-square:checked + .form__label-square::after {
+    display: block;
     content: url('/img/mark.svg');
     position: absolute;
     width: 40px;

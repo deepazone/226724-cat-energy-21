@@ -65,32 +65,23 @@
                 </label>
               </li>
             </ul>
-            <ul class="form__programm">
+          <fieldset class="form__programm">
+            <legend class="form__programm-title visually-hidden">программы</legend>
+            <ul class="form__programm-wrapper">
               <li class="form__item form__item--programm">
-                <label class="form__label" for="form-slim">
-                  <span class="form__label-radio">Похудение</span>
-                  <input class="form__input visually-hidden form__input--checkbox-circle" type="checkbox" name="weight-loss"
-                    id="form-slim" checked>
-                  <span class="form__checked-circle"> </span>
-                </label>
+                <input class="form__input-radio visually-hidden" id="slim-programm" value="nothing" type="radio" name="weight-advice">
+                <label class="form__label form__label-radio" for="slim-programm">Похудение</label>
               </li>
               <li class="form__item form__item--programm">
-                <label class="form__label" for="form-up">
-                  <span class="form__label-radio">Набор массы</span>
-                  <input class="form__input visually-hidden form__input--checkbox-circle" type="checkbox" name="weight-up" id="form-up">
-                  <span class="form__checked-circle"> </span>
-                </label>
-
+                <input class="form__input-radio visually-hidden" id="weight-programm" value="nothing" type="radio" name="weight-advice">
+                <label class="form__label form__label-radio" for="weight-programm">Набор массы</label>
               </li>
               <li class="form__item form__item--programm">
-                <label class="form__label" for="form-gain">
-                  <span class="form__label-radio">Не знаю (Нужен ваш совет)</span>
-                  <input class="form__input visually-hidden form__input--checkbox-circle" type="checkbox" name="weight-advice"
-                    id="form-gain">
-                  <span class="form__checked-circle"> </span>
-                </label>
+                <input class="form__input-radio visually-hidden" id="nothing-programm" value="nothing" type="radio" name="weight-advice">
+                <label class="form__label form__label-radio" for="nothing-programm">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
+          </fieldset>
           </div>
           <div class="form__owner">
             <h2 class="form__title">Контактные данные (владельца кота)</h2>
@@ -121,33 +112,27 @@
             <h2 class="form__title">Дополнительно</h2>
             <ul class="form__list--option">
               <li class="form__item--option form__item ">
-                <label class="form__label" for="form__shugar">
-                  <span class="form__label-square">Сахарозаменитель</span>
-                  <input class="form__input-square visually-hidden" type="checkbox" name="shugar"
-                    id="form-shugar">
-                    <span class="form__checked-square"> </span>
+                <label class="form__label">
+                  <input class="form__input-square visually-hidden" type="checkbox" name="shugar">
+                    <span class="form__label-square">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form__item--option form__item">
-                <label class="form__label" for="form__water">
+                <label class="form__label">
+                  <input class="form__input-square visually-hidden" type="checkbox" name="water">
                   <span class="form__label-square">Питьевая вода</span>
-                  <input class="form__input-square visually-hidden" type="checkbox" name="water" id="form-water">
-                  <span class="form__checked-square"> </span>
                 </label>
               </li>
               <li class="form__item--option form__item">
-                <label class="form__label" for="form__milk">
+                <label class="form__label">
+                  <input class="form__input-square visually-hidden" type="checkbox" name="milk" >
                   <span class="form__label-square">Молоко</span>
-                  <input class="form__input-square visually-hidden" type="checkbox" name="milk" id="form-milk">
-                  <span class="form__checked-square"> </span>
                 </label>
               </li>
               <li class="form__item--option form__item">
-                <label class="form__label" for="form__vitamin">
-                  <span class="form__label-square">Витамины</span>
-                  <input class="form__input-square visually-hidden" type="checkbox" name="vitamin"
-                    id="form-vitamin">
-                  <span class="form__checked-square"> </span>
+                <label class="form__label">
+                  <input class="form__input-square visually-hidden" type="checkbox" name="vitamin">
+                    <span class="form__label-square">Витамины</span>
                 </label>
               </li>
             </ul>
@@ -167,12 +152,12 @@
           <p class="contacts__address-city">Санкт-Петербург</p>
         </div>
       </div>
-      <div class="contacts__map">
-        <iframe class="contacts__map-frame contacts__map-frame--big"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11097.108901188885!2d30.315150983277206!3d59.93882818928171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605561919922!5m2!1sru!2sru"
-          width="100%" height="374" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe></div>
     </section>
+    <div class="contacts__map">
+      <iframe class="contacts__map-frame contacts__map-frame--big"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11097.108901188885!2d30.315150983277206!3d59.93882818928171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605561919922!5m2!1sru!2sru"
+        width="100%" height="374" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe></div>
   </main>
   <footer class="page-footer">
     <div class="footer">
