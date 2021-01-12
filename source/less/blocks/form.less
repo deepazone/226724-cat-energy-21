@@ -126,6 +126,7 @@
   flex-direction: row-reverse;
 }
 
+
 .form__field-label {
   display: flex;
   align-items: center;
@@ -150,9 +151,10 @@
 @media (min-width: @tablet-width) {
   .form__wrapper {
     width: 708px;
-    margin-bottom: 96px;
+    margin-bottom: 54px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 46px;
   }
 
   .form__title--header {
@@ -162,12 +164,7 @@
   }
 
   .form__list {
-    margin-bottom: 110px;
-
-    &--owner,
-    &--comment {
-      margin-bottom: 72px;
-    }
+    margin-bottom: 72px;
 
     &--option {
       display: grid;
@@ -220,15 +217,73 @@
 
   .form__programm {
     padding-left: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid @border-gray;
+  }
+
+  .form__label-radio {
+    margin-bottom: 12px;
+    margin-left: 57px;
   }
 
   .form__label {
+    position: relative;
     font-size: 20px;
   }
 
   .form__label-text {
     padding-left: 0;
     font-size: 20px;
+  }
+
+  .form__checked-circle::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -12px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid @border-checkbox-frame;
+    border-radius: 20px;
+  }
+
+  .form__input:checked + .form__checked-circle::after {
+    display: block;
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    background-color: @basic-green;
+    border-radius: 50%;
+  }
+
+  .form__checked-square::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -12px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid @border-checkbox-frame;
+  }
+
+  .form__label-square {
+    padding-left: 47px;
+  }
+
+  .form__input-square:checked + .form__checked-square::after {
+
+    content: url('/img/mark.svg');
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 7px;
+    top: -2px;
   }
 
   .form__item--option {

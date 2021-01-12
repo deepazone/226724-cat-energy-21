@@ -20,15 +20,14 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
-  right: auto;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 36px;
+    top: 31px;
+    left: 25px;
+    width: 26px;
     height: 2px;
     background-color: @basic-dark;
   }
@@ -65,9 +64,9 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
+  top: 23px;
+  left: 26px;
+  width: 24px;
   height: 2px;
   background-color: @basic-dark;
   box-shadow: 0 8px 0 0 @basic-dark, 0 16px 0 0 @basic-dark;
@@ -86,10 +85,11 @@
 
 .main-nav__list {
   .list-reset();
+  margin-top: 13px;
 }
 
 .main-nav__item {
-  font-size: 19px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -127,6 +127,7 @@
     flex-grow: 1;
     width: 441px;
     border-bottom: none;
+    margin-top: 0;
   }
 
   .main-nav__toggle {
