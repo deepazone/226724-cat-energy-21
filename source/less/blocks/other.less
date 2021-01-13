@@ -77,13 +77,63 @@
     margin: 0 auto;
   }
 
+  .other__wrapper {
+    margin-top: 47px;
+  }
+
   .other__title {
     font-size: 36px;
     font-weight: 400;
+    position: relative;
+    background-color: @basic-white;
+    width: max-content;
+    border-bottom: none;
+    margin-left: 38px;
+    margin-right: 20px;
+    margin-top: 51px;
+
+    &::before,
+    &::after {
+    margin-right: 40px;
+    position: absolute;
+    content: "";
+    top: 37%;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    z-index: -1;
+    background-color: @basic-green;
+    }
+
+    &::after {
+      margin-left: 22px;
+      left: 100%;
+    }
   }
 
   .other__item-title {
     font-size: 20px;
+  }
+
+  .other__item {
+    padding: 26px 20px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid @border-gray;
+  }
+
+  .other__promo {
+    background-image: url(/img/gift-photo-tablet.jpg);
+    min-height: 200px;
+  }
+
+  .other__promo-title {
+    margin-left: 422px;
+    padding-top: 77px;
+    text-align: left;
   }
 }
 

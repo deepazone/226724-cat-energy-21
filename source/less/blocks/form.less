@@ -219,28 +219,27 @@
     position: relative;
     font-size: 36px;
     margin-bottom: 79px;
+    background-color: @basic-white;
+    width: max-content;
+    padding-right: 19px;
 
-    &::before {
-      content: "";
-      height: 2px;
-      background-color: @basic-green;
-      position: absolute;
-      top: 50px;
-      right: -40px;
-      width: 100vw;
+    &::before,
+    &::after {
+    margin-right: 40px;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    z-index: -1;
+    background-color: @basic-green;
     }
 
-   /* &::after {
-      content: "";
-      position: absolute;
-      width: 100vw;
-      margin-left: 0px;
-      top: 15px;
-      height: 2px;
-      right: 100%;
-      border-left: solid 43px @basic-white;
-      background-color: @basic-green;
-    }*/
+    &::after {
+      margin-left: 22px;
+      left: 100%;
+    }
   }
 
   .form__programm {
