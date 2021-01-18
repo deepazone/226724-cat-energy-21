@@ -31,7 +31,7 @@
 
 .form__subtitle {
   color: @basic-dark;
-  font-family: "Oswald", "Tahoma", sans-serif;
+  font-family: @special-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -67,6 +67,7 @@
 
 .form__programm {
   margin-bottom: 25px;
+
 }
 
 .form__cat,
@@ -107,6 +108,7 @@
   font-family: @special-font-family;
   font-size: 16px;
   text-transform: uppercase;
+  border: 1px solid @special-gray;
 
   &--checkbox-circle,
   &--checkbox-square {
@@ -118,6 +120,14 @@
   &--comment {
     min-height: 150px;
     margin: 0;
+  }
+
+  &:disabled {
+    border: 2px solid @special-dark-gray;
+  }
+
+  &:invalid  {
+    border: 2px solid @basic-error;
   }
 }
 
@@ -245,7 +255,7 @@
   .form__programm {
     padding-left: 32px;
     padding-top: 23px;
-    border: 1px solid @border-gray;
+    border: 1px solid @special-gray;;
   }
 
   .form__label-radio {
@@ -418,7 +428,7 @@
     width: 557px;
     padding: 36px 19px 9px 19px;
     margin-bottom: 0;
-    border: 1px solid;
+    border: 1px solid @special-gray;
   }
 
   .form__cat {

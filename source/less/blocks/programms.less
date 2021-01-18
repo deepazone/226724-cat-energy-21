@@ -10,6 +10,60 @@
 .programms__item {
   background: @basic-gray;
   list-style-type: none;
+  position: relative;
+
+  &--cat-slim::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/cat_back_slim.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: 81px;
+      left: 445px;
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 38px;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+      background-size: 100px 106px;
+    }
+  }
+
+  &--cat-weight::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+    background-image: url("/img/cat_back_weight.svg");
+
+    @media (min-width: @tablet-width) {
+      top: 91px;
+      left: 410px;
+      width: 268px;
+      height: 200px;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 44px;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+      background-size: 134px 100px;
+    }
+  }
 }
 
 .programms__title {
@@ -39,6 +93,7 @@
 }
 
 .programms__link {
+  position: relative;
   font-family: @special-font-family;
   font-size: 16px;
   font-style: normal;
@@ -50,6 +105,34 @@
   padding-bottom: 19px;
   display: block;
   color: @basic-dark;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 119px;
+    width: 24px;
+    height: 12px;
+    background-image: url("/img/icon-arrow-short.svg");
+    background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 2px;
+    left: 128px;
+    width: 32px;
+    height: 12px;
+    }
+  }
+}
+
+.programs__link:hover::after {
+  width: 32px;
+  background-image: url("/img/icon-hover.svg");
+}
+
+.programs__link:active::after {
+  width: 32px;
+  background-image: url("/img/icon-arrow-hover.svg");
 }
 
 @media (min-width: @tablet-width) {
@@ -86,6 +169,7 @@
     padding: 0;
     margin-left: 51px;
     margin-bottom: 60px;
+    border-bottom: none;
   }
 
   .programms__link {
@@ -108,7 +192,7 @@
 
   .programms__item {
     width: 570px;
-    padding-bottom: 64px;
+    padding-bottom: 36px;
   }
 
   .programms__title {
@@ -121,7 +205,8 @@
     padding: 0;
     margin-top: 67px;
     margin-left: 52px;
-    max-width: 513px;
+    margin-bottom: 32px;
+    max-width: 483px;
   }
 
   .programms__link {
