@@ -117,10 +117,18 @@
 }
 
 .cards__button--grey {
-  background: @basic-gray;
+  background: @background-slider-gray;
   color: @special-dark-gray-2;
   font-size: 16px;
   padding: 19px 10px 20px 10px;
+
+  &:hover {
+    background: @special-gray-2;
+  }
+
+  &:active {
+    color: rgba(@special-dark-gray-2, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -154,13 +162,13 @@
     padding-top: 103px;
 
     &::before {
-      top: 38px;
+      top: 78px;
       left: 40%;
       width: 60px;
     }
 
     &::after {
-      top: 38px;
+      top: 78px;
       left: 39%;
       width: 60px;
     }
@@ -195,9 +203,11 @@
     }
 
     &--more {
-      min-height: 414px;
+      min-height: 433px;
       align-self: end;
       background: @basic-white;
+      border: 2px solid @background-slider-gray;
+      padding-top: 41px;
     }
   }
 
@@ -255,6 +265,14 @@
     width: 249px;
     margin: 0 auto;
     padding: 10px;
+
+    &:hover {
+      background: @special-gray-2;
+    }
+
+    &:active {
+      color: rgba(@special-dark-gray-2 0.8);
+    }
   }
 }
 
@@ -294,5 +312,11 @@
     width: 173px;
     margin-bottom: 0;
     margin-top: 18px;
+
+    &--grey {
+      position: relative;
+      top: -13px;
+      width: 173px;
+    }
   }
 }

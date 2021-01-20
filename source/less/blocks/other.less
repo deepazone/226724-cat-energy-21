@@ -31,6 +31,7 @@
 }
 
 .other__promo {
+  position: relative;
   min-height: 289px;
   min-width: 280px;
   margin-top: 39px;
@@ -64,6 +65,13 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.other__promo-icon {
+  position: absolute;
+  width: 57px;
+  left: 111px;
+  top: 23px;
 }
 
 .other__button {
@@ -142,6 +150,11 @@
     padding-top: 77px;
     text-align: left;
   }
+
+  .other__promo-icon {
+    left: 90px;
+    top: 23px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -181,7 +194,11 @@
   }
 
   .other__promo-title {
-    margin: 0 auto;
     text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 180px;
+    position: relative;
+    top: 180px;
   }
 }
