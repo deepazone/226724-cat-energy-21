@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Страница отправки формы</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -87,19 +88,19 @@
             <h2 class="form__title">Контактные данные (владельца кота)</h2>
             <ul class="form__list--owner form__list">
               <li class="form__item--owner form__item">
-                <label class="form__label" for="form__mail">E-mail:*</label>
+                <label class="form__label" for="form-mail">E-mail:*</label>
                 <input class="form__input form__input--owner" name="name-owner" id="form-mail" type="text"
                   placeholder="kuklachev@gmail.com">
                   <svg class="form__icon form__icon--email" width="20" height="15">
-                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                    <use xlink:href="img/icons/sprite.svg#icon-email"></use>
                   </svg>
               </li>
               <li class="form__item--owner form__item">
-                <label class="form__label" for="form__phone">Телефон:*</label>
+                <label class="form__label" for="form-phone">Телефон:*</label>
                 <input class="form__input form__input--owner" name="phone-owner" id="form-phone" type="text"
                   placeholder="8 (960) 900-60-90">
                   <svg class="form__icon form__icon--phone" width="20" height="15">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
                   </svg>
               </li>
             </ul>
@@ -109,8 +110,8 @@
             <div class="form__list form__list--comment">
               <div class="form__item form__item--comment">
                 <label class="form__label" for="form-comment"></label>
-                <textarea class="form__input form__input--comment" type="text" name="comment"
-                  id="form-comment">Расскажите обо всех повадках кота </textarea>
+                <textarea class="form__input form__input--comment" name="comment" id="form-comment"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
           </div>
@@ -151,6 +152,7 @@
       </div>
     </section>
     <section class="contacts">
+      <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__wrapper">
         <p class="contacts__text">приглашаем &nbsp;к сотрудничеству дилеров!</p>
         <div class="contacts__address">
@@ -160,10 +162,11 @@
       </div>
     </section>
     <div class="contacts__map">
-      <iframe class="contacts__map-frame contacts__map-frame--big"
+      <iframe height="374" class="contacts__map-frame contacts__map-frame--big"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11097.108901188885!2d30.315150983277206!3d59.93882818928171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605561919922!5m2!1sru!2sru"
-        width="100%" height="374" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe></div>
+        style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+      </div>
   </main>
   <footer class="page-footer">
     <div class="footer">
@@ -176,23 +179,26 @@
             <li class="footer__social-item">
               <a class="footer__social-link" href="">
                 <svg class="footer__social-icon footer__social-icon--vk">
-                  <use xlink:href=img/sprite.svg#vk></use>
+                  <use xlink:href="img/icons/sprite.svg#vk"></use>
                 </svg>
-                </svg><span class="visually-hidden">В контакте</span></a>
+                <span class="visually-hidden">В контакте</span>
+              </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="">
                 <svg class="footer__social-icon footer__social-icon--inst">
-                  <use xlink:href=img/sprite.svg#inst></use>
+                  <use xlink:href="img/icons/sprite.svg#inst"></use>
                 </svg>
-                <span class="visually-hidden">Инстаграмм</span></a>
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="">
                 <svg class="footer__social-icon footer__social-icon--fb">
-                  <use xlink:href=img/sprite.svg#fb></use>
+                  <use xlink:href="img/icons/sprite.svg#fb"></use>
                 </svg>
-                <span class="visually-hidden">Фейсбук</span></a>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -201,15 +207,13 @@
             <p class="footer__copyright-text">HTML Academy</p>
           </a>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="footer__copyright-icon" src="img/academy_mobile.svg" alt="Логотип академии"></a>
+            <img class="footer__copyright-icon" src="img/academy_mobile.svg" alt="Логотип академии">
           </a>
         </div>
       </div>
     </div>
   </footer>
-
-  </main>
-  <script src="js/main-nav.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

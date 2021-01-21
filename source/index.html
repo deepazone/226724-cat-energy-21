@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная страница</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
   <body class="page-body">
   <header class="header">
@@ -41,9 +42,9 @@
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width: 1200px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet_1.png 1x, img/index-can-tablet_1@2x 2x.png">
-          <img class="promo__image" src="img/index-can-mobile_1.png"
-            srcset="img/index-can-mobile_1.png x1, img/index-can-mobile_1@2x.png 2x"
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+          <img class="promo__image" src="img/index-can-mobile.png"
+            srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x"
             alt="Банка питания со вкусом курицы">
         </picture>
         <a href="#" class="promo__link button">подобрать программу</a>
@@ -89,23 +90,22 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-            по
-            16 часов в день. </p>
+            по 16 часов в день. </p>
           <div class="example__stats">
             <div class="example__stats-wrapper">
               <dl class="stats">
-                <dd class="stats__subtitle">5 кг</dd>
-                <dt class="stats__title">снижение веса</dt>
+                <dt class="stats__subtitle">5 кг</dt>
+                <dd class="stats__title">снижение веса</dd>
               </dl>
               <dl class="stats">
-                <dt class="stats__subtitle">60 дней</dd>
-                <dt class="stats__title">затрачено времени</dt>
+                <dt class="stats__subtitle">60 дней</dt>
+                <dd class="stats__title">затрачено времени</dd>
               </dl>
             </div>
-            <div class="example__price-wrapper">
+            <dl class="example__price-wrapper">
               <dt class="example__price-">Затраты на питание:</dt>
               <dd class="example__price">15 000 РУБ.</dd>
-          </div>
+          </dl>
           </div>
         </div>
         <div class="progress">
@@ -136,6 +136,7 @@
       </div>
     </section>
     <section class="contacts">
+      <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__wrapper">
         <p class="contacts__text">приглашаем &nbsp;к сотрудничеству дилеров!</p>
         <div class="contacts__address">
@@ -145,11 +146,13 @@
       </div>
     </section>
     <div class="contacts__map">
-      <iframe class="contacts__map-frame contacts__map-frame--big"
+      <iframe height="374" class="contacts__map-frame contacts__map-frame--big"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11097.108901188885!2d30.315150983277206!3d59.93882818928171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605561919922!5m2!1sru!2sru"
-        width="100%" height="374" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe></div>
-  </main>
+        style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0">
+      </iframe>
+    </div>
+</main>
   <footer class="page-footer">
     <div class="footer">
       <div class="footer__wrapper">
@@ -161,23 +164,27 @@
             <li class="footer__social-item">
               <a class="footer__social-link" href="">
                 <svg class="footer__social-icon footer__social-icon--vk">
-                  <use xlink:href=img/sprite.svg#vk></use>
+                  <use xlink:href="img/icons/sprite.svg#vk"></use>
                 </svg>
-                </svg><span class="visually-hidden">В контакте</span></a>
+                <span class="visually-hidden">В контакте</span>
+              </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="">
                 <svg class="footer__social-icon footer__social-icon--inst">
-                  <use xlink:href=img/sprite.svg#inst></use>
+                  <use xlink:href="img/icons/sprite.svg#inst"></use>
                 </svg>
-                <span class="visually-hidden">Инстаграмм</span></a>
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="">
                 <svg class="footer__social-icon footer__social-icon--fb">
-                  <use xlink:href=img/sprite.svg#fb></use>
+                  <use xlink:href="img/icons/sprite.svg#fb"></use>
                 </svg>
-                <span class="visually-hidden">Фейсбук</span></a>
+
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -186,14 +193,14 @@
             <p class="footer__copyright-text">HTML Academy</p>
           </a>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="footer__copyright-icon" src="img/academy_mobile.svg" alt="Логотип академии"></a>
+            <img class="footer__copyright-icon" src="img/academy_mobile.svg" alt="Логотип академии">
           </a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main-nav.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

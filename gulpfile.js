@@ -44,9 +44,9 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/main-nav.js")
+  return gulp.src("source/js/scripts.js")
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
+    .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -83,32 +83,32 @@ const sprite = () => {
   return gulp.src("source/img/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/icons"));
 }
 
 exports.sprite = sprite;
 
 // Copy
 
-const copy = (done) => {
-  gulp.src([
+const copy = () => {
+  return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}",
-  ], {
-    base: "source"
-  })
+    "source/*ico",
+    "source/img/**/*.{jpg,png,svg}"
+  ],
+    {
+      base: "source"
+    })
     .pipe(gulp.dest("build"))
-  done();
 }
-
-exports.copy = copy;
 
 // Clean
 
 const clean = () => {
-  return del("build");
-};
+  return del("build")
+}
+
+exports.clean = clean;
 
 // Server
 
@@ -173,4 +173,3 @@ exports.default = gulp.series(
     server,
     watcher
   ));
-
