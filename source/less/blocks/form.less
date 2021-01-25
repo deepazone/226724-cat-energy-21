@@ -203,7 +203,7 @@
 }
 
 .form__label-square {
-  padding-left: 47px;
+  padding-left: 58px;
 }
 
 .form__label-square::before {
@@ -479,7 +479,7 @@
   }
 
   .form__list + .form__programm {
-    margin-left: 69px;
+    margin-left: 0;
   }
 
   .form__list {
@@ -515,15 +515,16 @@
 
   .form__programm {
     width: 557px;
-    padding: 36px 19px 9px 19px;
     margin-bottom: 0;
     border: 1px solid @special-gray;
   }
 
   .form__cat {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 77px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 81px;
+    margin-bottom: 78px;
   }
 
   .form__item--option {
@@ -531,7 +532,7 @@
   }
 
   .form__owner {
-    margin-bottom: 48px;
+    margin-bottom: 53px;
   }
 
   .form__comment {
