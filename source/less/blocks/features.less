@@ -1,6 +1,6 @@
 .features__wrapper {
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 14px;
   margin: 0 auto;
 }
 
@@ -23,6 +23,11 @@
   line-height: 18px;
   position: relative;
   font-size: 14px;
+}
+
+.features__item-text {
+  width: 265px;
+  margin: 0;
 }
 
 .features__item--leaf::before {
@@ -91,13 +96,37 @@
   }
 
   .features__item {
-    width: 222px;
+    width: auto;
     padding-top: 112px;
     padding-left: 0;
     margin-top: 0;
     min-height: 290px;
     font-size: 16px;
     line-height: 24px;
+
+    &--leaf {
+      background-image: url("/img/number_one.svg");
+      background-repeat: no-repeat;
+      background-position-x: 126px;
+    }
+
+    &--cup {
+      background-image: url("/img/number_two.svg");
+      background-repeat: no-repeat;
+      background-position-x: 126px;
+    }
+
+    &--eat {
+      background-image: url("/img/number_three.svg");
+      background-repeat: no-repeat;
+      background-position-x: 122px;
+    }
+
+    &--weight {
+      background-image: url("/img/number_four.svg");
+      background-repeat: no-repeat;
+      background-position-x: 126px;
+    }
   }
 
   .features__item--leaf::before {
