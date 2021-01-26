@@ -1,7 +1,7 @@
 .cards__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .cards__title {
@@ -60,6 +60,10 @@
   .border-bottom();
 }
 
+.cards__item-title-link {
+  color: @special-dark-gray-2;
+}
+
 .cards__item-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -81,7 +85,7 @@
   align-items: center;
   text-align: center;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   padding-top: 56px;
 
   &::before,
@@ -120,7 +124,7 @@
   background: @background-slider-gray;
   color: @special-dark-gray-2;
   font-size: 16px;
-  padding: 19px 10px 20px 10px;
+  padding: 12px 10px 11px 10px;
 
   &:hover {
     background: @special-gray-2;
@@ -149,17 +153,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 57px;
+    gap: 60px;
   }
 
   .cards__description-list {
-    width: 244px;
+    width: 250px;
     font-size: 12px;
+    margin: 0;
   }
 
   .cards__description-item--more {
-    padding-bottom: 106px;
-    padding-top: 103px;
+    padding-bottom: 85px;
+    padding-top: 78px;
 
     &::before {
       top: 78px;
@@ -176,6 +181,7 @@
 
   .cards__list:last-child {
     flex-direction: row;
+    align-items: flex-end;
   }
 
   .cards__link {
@@ -188,19 +194,14 @@
     position: relative;
     width: 324px;
     min-height: 511px;
+    padding-bottom: 40px;
+    padding-top: 0;
     background: @card-item-gradient;
-    /* border: 1px solid; */
     border-bottom: none;
 
-    &--large-box,
-    &--small-box {
-      /* padding-top: 4px;*/
-      padding: 0;
-      display: flex;
-      flex: 1 1 auto;
-      flex-wrap: wrap;
-      align-content: flex-end;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     &--more {
       min-height: 433px;
@@ -214,10 +215,11 @@
   .cards__description-item {
     display: flex;
     justify-content: space-between;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 6px;
+    padding-bottom: 7px;
     font-size: 16px;
     border-bottom: 1px solid @border-gray;
+    margin-top: 0;
   }
 
   .cards__item-wrapper {
@@ -227,14 +229,17 @@
   }
 
   .cards__name {
-    margin-top: 39px;
+    margin-top: 22px;
+    margin-bottom: 15px;
     text-align: center;
     width: 155px;
     font-size: 20px;
+    line-height: 24px;
   }
 
   .cards__name--more {
     font-size: 20px;
+    line-height: 22px;
     width: 170px;
     margin: 0 auto;
   }
@@ -255,8 +260,7 @@
   .cards__button {
     font-size: 16px;
     margin: 0 auto;
-    margin-bottom: 22px;
-    margin-top: 11px;
+    margin-top: 33px;
     width: 248px;
   }
 
@@ -299,12 +303,16 @@
   }
 
   .cards__description-list {
+    position: relative;
+    bottom: 11px;
     width: 173px;
     font-size: 12px;
   }
 
-  .cards__name--more {
-    margin-top: 12px;
+  .cards__name {
+    margin-top: 39px;
+    margin-bottom: 26px;
+    line-height: 22px;
   }
 
   .cards__description-item {

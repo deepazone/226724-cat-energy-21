@@ -2,8 +2,7 @@
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
-  margin-bottom: 52px;
+  margin: 0 auto 36px;
 }
 
 .form__title {
@@ -43,6 +42,9 @@
     color: @basic-dark;
     font-family: @special-font-family;
     font-weight: 400;
+    width: auto;
+    margin-top: 37px;
+    margin-bottom: 40px;
 
     &::before,
     &::after {
@@ -71,7 +73,8 @@
 .form__programm {
   .list-reset ();
   flex-grow: 1;
-  margin-bottom: 54px;
+  margin: 0 0 24px;
+  /* margin-bottom: 54px; */
   border: none;
 
   &--owner {
@@ -88,7 +91,7 @@
 }
 
 .form__programm {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   border: none;
   border-top: solid 1px @border-gray;
   border-bottom: solid 1px @border-gray;
@@ -122,11 +125,15 @@
   text-transform: uppercase;
 
   &--option {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   &--programm {
-    margin-bottom: 15px;
+    margin-bottom: 9px;
+  }
+
+  &--owner {
+    margin-bottom: 19px;
   }
 }
 
@@ -181,7 +188,7 @@
 
 .form__label-radio {
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .form__label-radio::before {
@@ -209,7 +216,7 @@
 }
 
 .form__label-square {
-  padding-left: 58px;
+  padding-left: 57px;
 }
 
 .form__label-square::before {
@@ -260,13 +267,7 @@
     margin-bottom: 54px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 46px;
-  }
-
-  .form__title--header {
-    font-size: 60px;
-    margin-top: 31px;
-    margin-bottom: 42px;
+    margin-top: 76px;
   }
 
   .form__owner {
@@ -281,6 +282,11 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 31px 15px;
+      margin-bottom: 46px;
+    }
+
+    &--owner {
+      margin-bottom: 75px;
     }
   }
 
@@ -345,6 +351,12 @@
       margin-left: 22px;
       left: 100%;
     }
+  }
+
+  .form__title--header {
+    font-size: 60px;
+    margin-top: 31px;
+    margin-bottom: 69px;
   }
 
   .form__programm {
@@ -457,8 +469,8 @@
 
   .form__title--header {
     font-size: 60px;
-    margin-top: 31px;
-    margin-bottom: 44px;
+    margin-top: 91px;
+    margin-bottom: 70px;
   }
 
   .form__label-text {
@@ -538,7 +550,7 @@
   }
 
   .form__owner {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   .form__comment {

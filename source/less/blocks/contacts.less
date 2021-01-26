@@ -3,12 +3,14 @@
   background-color: @basic-white;
 }
 
-.contacts__wrapper {
+.contacts__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 13px;
   padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -89,6 +91,12 @@
     margin-bottom: -7px;
   }
 
+  .contacts__wrapper {
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
+  }
+
   .contacts__text {
     width: 190px;
     font-size: 20px;
@@ -107,13 +115,13 @@
     margin-right: 16px;
   }
 
-  .contacts__wrapper {
+  .contacts__block {
     width: 570px;
     justify-content: space-around;
     align-items: center;
     min-height: 202px;
     position: absolute;
-    left: 104px;
+    left: 0;
     top: 95px;
     padding: 0 0;
     background-color: @basic-white;

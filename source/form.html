@@ -16,9 +16,9 @@
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img width="33" height="37" class="header__logo" src="img/logo-mobile.svg" alt="Графема логотипа">
       </picture>
-      <img class="header__logo-text" src="img/logo_2.svg" alt="Кэт энерджи">
+      <img class="header__logo-text" width="101" height="18" src="img/logo_2.svg" alt="Кэт энерджи">
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__nav">
         <button type="button" class="main-nav__toggle"></button>
         <ul class="main-nav__list">
@@ -65,23 +65,26 @@
                 </label>
               </li>
             </ul>
-          <fieldset class="form__programm">
-            <legend class="form__programm-title visually-hidden">программы</legend>
-            <ul class="form__programm-wrapper">
-              <li class="form__item form__item--programm">
-                <input class="form__input-radio visually-hidden" id="slim-programm" value="nothing" type="radio" name="weight-advice">
-                <label class="form__label form__label-radio" for="slim-programm">Похудение</label>
-              </li>
-              <li class="form__item form__item--programm">
-                <input class="form__input-radio visually-hidden" id="weight-programm" value="nothing" type="radio" name="weight-advice">
-                <label class="form__label form__label-radio" for="weight-programm">Набор массы</label>
-              </li>
-              <li class="form__item form__item--programm">
-                <input class="form__input-radio visually-hidden" id="nothing-programm" value="nothing" type="radio" name="weight-advice">
-                <label class="form__label form__label-radio" for="nothing-programm">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="form__programm">
+              <legend class="form__programm-title visually-hidden">программы</legend>
+              <ul class="form__programm-wrapper">
+                <li class="form__item form__item--programm">
+                  <input class="form__input-radio visually-hidden" id="slim-programm" value="nothing" type="radio"
+                    name="weight-advice" checked>
+                  <label class="form__label form__label-radio" for="slim-programm">Похудение</label>
+                </li>
+                <li class="form__item form__item--programm">
+                  <input class="form__input-radio visually-hidden" id="weight-programm" value="nothing" type="radio"
+                    name="weight-advice">
+                  <label class="form__label form__label-radio" for="weight-programm">Набор массы</label>
+                </li>
+                <li class="form__item form__item--programm">
+                  <input class="form__input-radio visually-hidden" id="nothing-programm" value="nothing" type="radio"
+                    name="weight-advice">
+                  <label class="form__label form__label-radio" for="nothing-programm">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
           <div class="form__owner">
             <h2 class="form__title">Контактные данные (владельца кота)</h2>
@@ -90,17 +93,17 @@
                 <label class="form__label" for="form-mail">E-mail:*</label>
                 <input class="form__input form__input--owner" name="name-owner" id="form-mail" type="text"
                   placeholder="kuklachev@gmail.com">
-                  <svg class="form__icon form__icon--email" width="20" height="15">
-                    <use xlink:href="img/icons/sprite.svg#icon_email"></use>
-                  </svg>
+                <svg class="form__icon form__icon--email" width="20" height="15">
+                  <use xlink:href="img/icons/sprite.svg#icon_email"></use>
+                </svg>
               </li>
               <li class="form__item--owner form__item">
                 <label class="form__label" for="form-phone">Телефон:*</label>
                 <input class="form__input form__input--owner" name="phone-owner" id="form-phone" type="text"
                   placeholder="8 (960) 900-60-90">
-                  <svg class="form__icon form__icon--phone" width="20" height="15">
-                    <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
-                  </svg>
+                <svg class="form__icon form__icon--phone" width="20" height="15">
+                  <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
+                </svg>
               </li>
             </ul>
           </div>
@@ -110,7 +113,7 @@
               <div class="form__item form__item--comment">
                 <label class="form__label" for="form-comment"></label>
                 <textarea class="form__input form__input--comment" name="comment" id="form-comment"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
           </div>
@@ -119,8 +122,8 @@
             <ul class="form__list form__list--option">
               <li class="form__item--option form__item ">
                 <label class="form__label">
-                  <input class="form__input-square visually-hidden" type="checkbox" name="shugar">
-                    <span class="form__label-square">Сахарозаменитель</span>
+                  <input class="form__input-square visually-hidden" type="checkbox" name="shugar" checked>
+                  <span class="form__label-square">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form__item--option form__item">
@@ -131,14 +134,14 @@
               </li>
               <li class="form__item--option form__item">
                 <label class="form__label">
-                  <input class="form__input-square visually-hidden" type="checkbox" name="milk" >
+                  <input class="form__input-square visually-hidden" type="checkbox" name="milk">
                   <span class="form__label-square">Молоко</span>
                 </label>
               </li>
               <li class="form__item--option form__item">
                 <label class="form__label">
                   <input class="form__input-square visually-hidden" type="checkbox" name="vitamin">
-                    <span class="form__label-square">Витамины</span>
+                  <span class="form__label-square">Витамины</span>
                 </label>
               </li>
             </ul>
@@ -153,18 +156,20 @@
     <section class="contacts">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__wrapper">
-        <p class="contacts__text">приглашаем &nbsp;к сотрудничеству дилеров!</p>
-        <div class="contacts__address">
-          <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__address-city">Санкт-Петербург</p>
+        <div class="contacts__block">
+          <p class="contacts__text">приглашаем &nbsp;к сотрудничеству дилеров!</p>
+          <div class="contacts__address">
+            <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__map">
         <iframe height="374" class="contacts__map-frame contacts__map-frame--big"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11097.108901188885!2d30.315150983277206!3d59.93882818928171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605561919922!5m2!1sru!2sru"
-          style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-        </div>
+          style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -199,16 +204,15 @@
           </ul>
         </div>
         <div class="footer__copyright">
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" >
-              <p class="footer__copyright-text">HTML Academy</p>
-              <img class="footer__copyright-icon" src="img/academy_mobile.svg" alt="Логотип академии">
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <p class="footer__copyright-text">HTML Academy</p>
+            <img class="footer__copyright-icon" src="img/academy_mobile.svg" alt="Логотип академии">
           </a>
         </div>
       </div>
     </div>
   </footer>
   <script src="js/scripts.min.js"></script>
-  <script src="js/scripts.js"></script>
 </body>
 
 </html>
