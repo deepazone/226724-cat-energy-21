@@ -6,13 +6,6 @@
   margin-bottom: 52px;
 }
 
-.form__title--header {
-  font-size: 36px;
-  color: @basic-dark;
-  font-family: @special-font-family;
-  font-weight: 400;
-}
-
 .form__title {
   position: relative;
   width: 186px;
@@ -43,6 +36,18 @@
   &::after {
     margin-left: 22px;
     left: 38%;
+  }
+
+  &--header {
+    font-size: 36px;
+    color: @basic-dark;
+    font-family: @special-font-family;
+    font-weight: 400;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -161,6 +166,7 @@
 
   &--email {
     right: 13px;
+    fill: none;
   }
 
   &--phone {
@@ -502,7 +508,7 @@
   }
 
   .form__item {
-    width: 570px;
+    width: auto;
 
     &:last-child {
       margin-bottom: 0;
@@ -514,14 +520,14 @@
   }
 
   .form__programm {
-    width: 557px;
+    width: auto;
     margin-bottom: 0;
     border: 1px solid @special-gray;
   }
 
   .form__cat {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 569px 569px;
     grid-template-rows: 1fr;
     gap: 81px;
     margin-bottom: 78px;
